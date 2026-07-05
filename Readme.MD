@@ -115,13 +115,13 @@ https://404ctf.fr/
 
 * Pour cette catégorie, j'ai utilisé <img src="img/cherrytree.png" height=25 /> <a href="https://www.giuspen.com/cherrytree/">CherryTree</a> pour organiser mes recherches.
 * Le fichier [OSINT-404CTF.ctb](OSINT/OSINT-404CTF.ctd) contient les énoncés (noeuds) et les sous-noeuds contiennent des pistes ou solutions. Ils sont bien identifiés (pour écarter tout risque de spoil).
-* Les challenges seront plus tard rédigés dans des fichiers markdown dédiés, quand je prendrais le temps de les migrer.
+* Vous trouverez également les solutions rédigés dans des fichiers markdown séparés ci-dessous.
 
-⚪️ [Chaud Devant](OSINT/)<br>
+⚪️ [Chaud Devant](OSINT/ChaudDevant/)<br>
 🟢 [C'était caché](OSINT/CetaitCache/)<br>
-⚪️ [Monsieur C : Découverte](OSINT/)<br>
-🔵 [Monsieur C : Somebody Is Watching Me](OSINT/)<br>
-🔵 [Monsieur C : Voyage voyage](OSINT/)
+⚪️ [Monsieur C : Découverte](OSINT/MonsieurC_Decouverte/)<br>
+🔵 [Monsieur C : Somebody Is Watching Me](OSINT/MonsieurC_SomebodyIsWatchingMe/)<br>
+🔵 [Monsieur C : Voyage voyage](OSINT/MonsieurC_VoyageVoyage/)
 
 
 ## Scoreboard
@@ -146,11 +146,10 @@ Fichier json de CTFd pour le scoreboard (au 31/05, 23h00) : [scoreboard-31-05.js
 
 ### Classement final
 
-*Sera complété plus tard, une fois le classement final publié et dès que j'aurai le temps de mettre à jour ce repo.*
-
 | Rang | Points |
 |------|--------|
-| XXe  | XXXX   |
+| **292e**  | 1602   |
 
-<!-- TODO /api/v1/scoreboard -->
+[*Source*](https://web.archive.org/web/20260610214545/https://ctf.404ctf.fr/scoreboard)
+
 Fichier json de CTFd pour le scoreboard (post CTF) : [scoreboard.json](scoreboard/scoreboard.json)
